@@ -1,0 +1,1 @@
+from .interface.repository_interface import IHealthRepository

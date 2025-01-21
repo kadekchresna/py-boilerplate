@@ -1,0 +1,1 @@
+from .usecase.interface import IHealthUseCase
