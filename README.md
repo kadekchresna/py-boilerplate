@@ -29,4 +29,5 @@ project/
 
 1. Make sure python 3 is installed
 2. The dependency manager for this repo is `uv`, [install](https://docs.astral.sh/uv/getting-started/installation/) `uv` and run `uv sync` 
+3. Run `cp env.example .env`
 4. It is optional to use vscode since debug config already installed and you just need to Run > Start Debugging in vscode. If you not using vscode, run `uvicorn app.main:app --reload --port=8001`
