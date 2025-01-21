@@ -20,7 +20,10 @@ database = db.get_db_engine()
 
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s',
+    handlers=[
+        logging.StreamHandler()         # Logs to the console
+    ]
 )
 
 app = FastAPI(title="Python FastAPI")

@@ -12,7 +12,7 @@ class Base(DeclarativeBase):
     pass
 
 class ExampleDAO(Base):
-    __tablename__ = "example"
+    __tablename__ = "examples"
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(30))
 

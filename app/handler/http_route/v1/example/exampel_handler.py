@@ -1,4 +1,5 @@
 
+import logging
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
@@ -34,6 +35,7 @@ class ExampleHandler():
                 }
 
         except Exception as e:
+            logging.error(f"ERROR OCCURRED. \n{e}")
             return JSONResponse(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 content={
